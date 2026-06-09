@@ -25,7 +25,7 @@ const Login = () => {
     setMessage({ text: '', type: '' });
 
     try {
-      const res = await axios.post('http://localhost:3000/login', formData);
+      const res = await axios.post('https://6a27bc97c4fd7e95c57f424b--lostandfound27.netlify.app/login', formData);
       const Token = res.data.Token;
 
       localStorage.setItem('Token', Token);
