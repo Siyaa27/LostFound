@@ -83,7 +83,7 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post('https://6a27bc97c4fd7e95c57f424b--lostandfound27.netlify.app/signup', formData);
+      const res = await axios.post('https://lostfoundbackend-1a81.onrender.com/signup', formData);
       const token = res.data?.token;
       
       if (token) {

@@ -55,7 +55,7 @@ const CreatePost = () => {
     formData.append('image', imageFile);
 
     try {
-      const res = await axios.post('http://localhost:3000/newpost', formData, {
+      const res = await axios.post('https://lostfoundbackend-1a81.onrender.com/newpost', formData, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',

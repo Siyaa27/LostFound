@@ -21,7 +21,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/profile", {
+        const response = await axios.get("https://lostfoundbackend-1a81.onrender.com/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(response.data);

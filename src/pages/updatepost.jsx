@@ -21,7 +21,7 @@ const UpdatePost = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/postbyid/${id}`, {
+        const res = await axios.get(`https://lostfoundbackend-1a81.onrender.com/postbyid/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const post = res.data.post;
@@ -67,7 +67,7 @@ const UpdatePost = () => {
       formData.append('image', image);
     }
     try {
-      await axios.put(`http://localhost:3000/updatepost/${id}`, formData, {
+      await axios.put(`https://lostfoundbackend-1a81.onrender.com/updatepost/${id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',

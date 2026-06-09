@@ -11,7 +11,7 @@ const MyItems = () => {
     const fetchMyPosts = async () => {
       try {
         const token = localStorage.getItem("Token");
-        const response = await axios.get("http://localhost:3000/mypost", {
+        const response = await axios.get("https://lostfoundbackend-1a81.onrender.com/mypost", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

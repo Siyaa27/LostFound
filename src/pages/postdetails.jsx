@@ -21,7 +21,7 @@ const PostDetail = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/postbyid/${id}`, {
+        const res = await axios.get(`https://lostfoundbackend-1a81.onrender.com/postbyid/${id}`, {
           headers: { Authorization: `Bearer ${Token}` },
         });
         setPost(res.data.post);
@@ -36,7 +36,7 @@ const PostDetail = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:3000/deletepost/${id}`, {
+      await axios.delete(`https://lostfoundbackend-1a81.onrender.com/deletepost/${id}`, {
         headers: { Authorization: `Bearer ${Token}` },
       });
       setShowDeleteModal(false);

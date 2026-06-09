@@ -25,7 +25,7 @@ const ShowPost = () => {
             }
 
             try {
-                const res = await axios.get('http://localhost:3000/showpost', {
+                const res = await axios.get('https://lostfoundbackend-1a81.onrender.com/showpost', {
                     headers: {
                         Authorization: `Bearer ${Token}`
                     }

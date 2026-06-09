@@ -27,7 +27,7 @@ const ContactUs = () => {
     setLoading(true);
     try {
       await axios.post(
-        'http://localhost:3000/contact',
+        'https://lostfoundbackend-1a81.onrender.com/contact',
         formData,
         { headers: { Authorization: `Bearer ${token}` } }
       );
